@@ -47,7 +47,7 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1050, 96);
+            this.label1.Size = new System.Drawing.Size(1159, 93);
             this.label1.TabIndex = 0;
             this.label1.Text = "Un problème ?";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -60,7 +60,7 @@
             this.statusButton.IconColor = System.Drawing.Color.Black;
             this.statusButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.statusButton.IconSize = 60;
-            this.statusButton.Location = new System.Drawing.Point(595, 165);
+            this.statusButton.Location = new System.Drawing.Point(594, 132);
             this.statusButton.Name = "statusButton";
             this.statusButton.Size = new System.Drawing.Size(107, 92);
             this.statusButton.TabIndex = 1;
@@ -72,43 +72,47 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft YaHei UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(165, 183);
+            this.label2.Location = new System.Drawing.Point(165, 150);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(365, 41);
             this.label2.TabIndex = 2;
             this.label2.Text = "Connexion à Internet : ";
+            this.label2.Click += new System.EventHandler(this.label2_Click_1);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft YaHei UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(19, 379);
+            this.label3.Location = new System.Drawing.Point(3, 301);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(486, 41);
             this.label3.TabIndex = 3;
             this.label3.Text = "Problème de clavier ou souris :";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
             // 
             this.label4.Font = new System.Drawing.Font("Microsoft YaHei UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(167, 441);
+            this.label4.Location = new System.Drawing.Point(167, 357);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(745, 69);
             this.label4.TabIndex = 4;
-            this.label4.Text = "1 : Je retire son clavier à son ordinateur (si son clavier est détachable)\r\n     " +
-    "Puis lui remet\r\n";
+            this.label4.Text = "1 : Je détache puis attache le clavier de l\'ordinateur\r\n    (si son clavier est d" +
+    "étachable)\r\n     \r\n";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label5
             // 
             this.label5.Font = new System.Drawing.Font("Microsoft YaHei UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(167, 527);
+            this.label5.Location = new System.Drawing.Point(167, 438);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(396, 36);
             this.label5.TabIndex = 5;
             this.label5.Text = "2 : Essaye de redémarrer l\'ordinateur : ";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // appsButton1
             // 
@@ -117,7 +121,7 @@
             this.appsButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.appsButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.appsButton1.ForeColor = System.Drawing.Color.White;
-            this.appsButton1.Location = new System.Drawing.Point(578, 523);
+            this.appsButton1.Location = new System.Drawing.Point(569, 434);
             this.appsButton1.Name = "appsButton1";
             this.appsButton1.Size = new System.Drawing.Size(195, 40);
             this.appsButton1.TabIndex = 6;
@@ -150,6 +154,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(216)))));
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -161,7 +166,7 @@
             this.Controls.Add(this.statusButton);
             this.Controls.Add(this.label1);
             this.Name = "StatusPage";
-            this.Size = new System.Drawing.Size(1050, 800);
+            this.Size = new System.Drawing.Size(1159, 800);
             this.Load += new System.EventHandler(this.StatusPage_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

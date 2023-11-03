@@ -16,6 +16,7 @@ namespace CGAS_ELEVES_Winforms.Applications
         public AppsEleves()
         {
             InitializeComponent();
+            this.Dock = DockStyle.Fill;
         }
 
         private void AppsEleves_Load(object sender, EventArgs e)
@@ -45,7 +46,7 @@ namespace CGAS_ELEVES_Winforms.Applications
 
         private void VocalButton_Click(object sender, EventArgs e)
         {
-            Process.Start("explorer.exe", @"C:\Users\Eleves\Desktop\Enregistreurvocal.lnk");
+            Process.Start("explorer.exe", @"C:\Users\Eleves\CGAS_ELEVES\Enregistreurvocal.lnk");
         }
 
         private void VLCButton_Click(object sender, EventArgs e)
@@ -81,6 +82,11 @@ namespace CGAS_ELEVES_Winforms.Applications
         private void PDFButton_Click(object sender, EventArgs e)
         {
             Process.Start("explorer.exe", @"C:\ProgramData\Microsoft\Windows\Start Menu\Programs\PDF-XChange PDF Viewer\PDF-Viewer.lnk");
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

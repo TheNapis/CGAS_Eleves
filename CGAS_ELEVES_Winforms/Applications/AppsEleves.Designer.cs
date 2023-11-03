@@ -62,29 +62,30 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft YaHei UI", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(399, 212);
+            this.label2.Location = new System.Drawing.Point(451, 212);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(274, 46);
+            this.label2.Size = new System.Drawing.Size(167, 46);
             this.label2.TabIndex = 14;
-            this.label2.Text = "Les outils utiles";
+            this.label2.Text = "J\'explore";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft YaHei UI", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(442, 415);
+            this.label3.Location = new System.Drawing.Point(399, 415);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(167, 46);
+            this.label3.Size = new System.Drawing.Size(274, 46);
             this.label3.TabIndex = 15;
-            this.label3.Text = "J\'explore";
+            this.label3.Text = "Les outils utiles";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft YaHei UI", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(414, 602);
+            this.label4.Location = new System.Drawing.Point(418, 598);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(230, 46);
             this.label4.TabIndex = 16;
@@ -98,7 +99,7 @@
             this.ScratchButton.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ScratchButton.ForeColor = System.Drawing.Color.White;
             this.ScratchButton.Image = global::CGAS_ELEVES_Winforms.Properties.Resources.Scratch;
-            this.ScratchButton.Location = new System.Drawing.Point(408, 486);
+            this.ScratchButton.Location = new System.Drawing.Point(407, 286);
             this.ScratchButton.Name = "ScratchButton";
             this.ScratchButton.Size = new System.Drawing.Size(250, 63);
             this.ScratchButton.TabIndex = 12;
@@ -115,11 +116,11 @@
             this.VocalButton.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.VocalButton.ForeColor = System.Drawing.Color.White;
             this.VocalButton.Image = global::CGAS_ELEVES_Winforms.Properties.Resources.Vocal;
-            this.VocalButton.Location = new System.Drawing.Point(408, 286);
+            this.VocalButton.Location = new System.Drawing.Point(407, 486);
             this.VocalButton.Name = "VocalButton";
             this.VocalButton.Size = new System.Drawing.Size(250, 63);
             this.VocalButton.TabIndex = 11;
-            this.VocalButton.Text = "Enregisteur Vocal";
+            this.VocalButton.Text = "Enregistreur Vocal";
             this.VocalButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.VocalButton.UseVisualStyleBackColor = false;
             this.VocalButton.Click += new System.EventHandler(this.VocalButton_Click);
@@ -132,7 +133,7 @@
             this.VLCButton.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.VLCButton.ForeColor = System.Drawing.Color.White;
             this.VLCButton.Image = global::CGAS_ELEVES_Winforms.Properties.Resources.VLC;
-            this.VLCButton.Location = new System.Drawing.Point(719, 286);
+            this.VLCButton.Location = new System.Drawing.Point(719, 486);
             this.VLCButton.Name = "VLCButton";
             this.VLCButton.Size = new System.Drawing.Size(250, 63);
             this.VLCButton.TabIndex = 10;
@@ -166,7 +167,7 @@
             this.GlobeButton.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GlobeButton.ForeColor = System.Drawing.Color.White;
             this.GlobeButton.Image = global::CGAS_ELEVES_Winforms.Properties.Resources.Earth;
-            this.GlobeButton.Location = new System.Drawing.Point(84, 486);
+            this.GlobeButton.Location = new System.Drawing.Point(84, 286);
             this.GlobeButton.Name = "GlobeButton";
             this.GlobeButton.Size = new System.Drawing.Size(250, 63);
             this.GlobeButton.TabIndex = 8;
@@ -183,7 +184,7 @@
             this.OBSButton.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.OBSButton.ForeColor = System.Drawing.Color.White;
             this.OBSButton.Image = global::CGAS_ELEVES_Winforms.Properties.Resources.OBS;
-            this.OBSButton.Location = new System.Drawing.Point(72, 667);
+            this.OBSButton.Location = new System.Drawing.Point(84, 667);
             this.OBSButton.Name = "OBSButton";
             this.OBSButton.Size = new System.Drawing.Size(250, 63);
             this.OBSButton.TabIndex = 7;
@@ -217,7 +218,7 @@
             this.InternetButton.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.InternetButton.ForeColor = System.Drawing.Color.White;
             this.InternetButton.Image = global::CGAS_ELEVES_Winforms.Properties.Resources.Edge;
-            this.InternetButton.Location = new System.Drawing.Point(719, 486);
+            this.InternetButton.Location = new System.Drawing.Point(719, 286);
             this.InternetButton.Name = "InternetButton";
             this.InternetButton.Size = new System.Drawing.Size(250, 63);
             this.InternetButton.TabIndex = 5;
@@ -234,7 +235,7 @@
             this.CalculatriceButton.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CalculatriceButton.ForeColor = System.Drawing.Color.White;
             this.CalculatriceButton.Image = global::CGAS_ELEVES_Winforms.Properties.Resources.Calcdk;
-            this.CalculatriceButton.Location = new System.Drawing.Point(84, 286);
+            this.CalculatriceButton.Location = new System.Drawing.Point(84, 486);
             this.CalculatriceButton.Name = "CalculatriceButton";
             this.CalculatriceButton.Size = new System.Drawing.Size(250, 63);
             this.CalculatriceButton.TabIndex = 4;
@@ -303,6 +304,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.WriterButton);
             this.Controls.Add(this.ScratchButton);
             this.Controls.Add(this.VocalButton);
             this.Controls.Add(this.VLCButton);
@@ -313,7 +315,6 @@
             this.Controls.Add(this.InternetButton);
             this.Controls.Add(this.CalculatriceButton);
             this.Controls.Add(this.PresentationButton);
-            this.Controls.Add(this.WriterButton);
             this.Controls.Add(this.CalcButton);
             this.Name = "AppsEleves";
             this.Size = new System.Drawing.Size(1050, 800);
@@ -324,8 +325,6 @@
         }
 
         #endregion
-
-        private Class.AppsButton CalcButton;
         private Class.AppsButton WriterButton;
         private Class.AppsButton PresentationButton;
         private Class.AppsButton CalculatriceButton;
@@ -341,5 +340,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
+        private Class.AppsButton CalcButton;
     }
 }

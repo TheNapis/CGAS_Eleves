@@ -20,6 +20,7 @@ namespace CGAS_ELEVES_Winforms.Probleme
         public StatusPage()
         {
             InitializeComponent();
+            this.Dock = DockStyle.Fill;
             if (NetworkInterface.GetIsNetworkAvailable())
             {
                 statusButton.IconChar = FontAwesome.Sharp.IconChar.Check;
@@ -72,6 +73,26 @@ namespace CGAS_ELEVES_Winforms.Probleme
             {
                 // Do something
             }
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

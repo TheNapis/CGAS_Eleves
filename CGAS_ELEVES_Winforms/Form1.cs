@@ -12,11 +12,15 @@ using FontAwesome;
 using FontAwesome.Sharp;
 using System.Diagnostics;
 using CGAS_ELEVES_Winforms.Probleme;
+using System.Messaging;
+using CGAS_ELEVES_Winforms.Admin;
 
 namespace CGAS_ELEVES_Winforms
 {
+
     public partial class MainForm : Form
     {
+        
         public int adminCount = 0;
         public MainForm()
         {
@@ -99,7 +103,7 @@ namespace CGAS_ELEVES_Winforms
 
         private void batteryButton_Click(object sender, EventArgs e)
         {
-            if (adminCount >= 20)
+            if (adminCount >= 10)
             {
                 statusPage1.Visible = false;
                 appsEleves1.Visible = false;
@@ -114,8 +118,18 @@ namespace CGAS_ELEVES_Winforms
 
         private void folderButton_Click(object sender, EventArgs e)
         {
-            Process.Start(@"C:\Users\Eleves\Desktop"); 
+            try
+            {
+                Process.Start(@"C:\Users\Eleves\Desktop");
+            }
+            catch (System.ComponentModel.Win32Exception)
+            {
+                string message = "Le chemin d'accès pour le dossier C:\\Users\\Eleves\\Desktop est inacessible.\nCode erreur : Patte de canard";
+                string title = "Contacter votre enseignant";
+                DialogResult result = MessageBox.Show(message, title);
+            }
         }
+
 
         private void shutdownButton_Click(object sender, EventArgs e)
         {
@@ -150,10 +164,20 @@ namespace CGAS_ELEVES_Winforms
 
         private void passwordAdmin1_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void passerrorfrom(object sender, EventArgs e) 
+        { 
+
+        }
+
+        private void lockedComputer2_Load(object sender, EventArgs e)
         {
 
         }

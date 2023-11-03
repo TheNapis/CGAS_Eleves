@@ -39,6 +39,7 @@
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Management" />
     <Reference Include="System.Messaging" />
@@ -55,6 +56,12 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin\LockedComputer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin\LockedComputer.Designer.cs">
+      <DependentUpon>LockedComputer.cs</DependentUpon>
+    </Compile>
     <Compile Include="Admin\passwordAdmin.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -90,6 +97,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Admin\LockedComputer.resx">
+      <DependentUpon>LockedComputer.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Admin\passwordAdmin.resx">
       <DependentUpon>passwordAdmin.cs</DependentUpon>
     </EmbeddedResource>
@@ -109,20 +119,20 @@
       <DependentUpon>StatusPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <Generator>PublicResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -146,7 +156,6 @@
     <None Include="Resources\Edge.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Enregistreur vocal.lnk" />
     <None Include="Resources\GIMP.png" />
   </ItemGroup>
   <ItemGroup>

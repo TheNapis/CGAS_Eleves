@@ -37,8 +37,8 @@
             this.timeLabel = new System.Windows.Forms.Label();
             this.appsButton = new FontAwesome.Sharp.IconButton();
             this.shutdownButton = new FontAwesome.Sharp.IconButton();
-            this.Time = new System.Windows.Forms.Timer(this.components);
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.Time = new System.Windows.Forms.Timer(this.components);
             this.passwordAdmin1 = new CGAS_ELEVES_Winforms.Admin.passwordAdmin();
             this.statusPage1 = new CGAS_ELEVES_Winforms.Probleme.StatusPage();
             this.appsEleves1 = new CGAS_ELEVES_Winforms.Applications.AppsEleves();
@@ -49,18 +49,18 @@
             // LeftMenu
             // 
             this.LeftMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(68)))), ((int)(((byte)(163)))));
+            this.LeftMenu.Controls.Add(this.appsButton);
             this.LeftMenu.Controls.Add(this.batteryButton);
             this.LeftMenu.Controls.Add(this.dateLabel);
             this.LeftMenu.Controls.Add(this.problemButton);
             this.LeftMenu.Controls.Add(this.folderButton);
             this.LeftMenu.Controls.Add(this.timeLabel);
-            this.LeftMenu.Controls.Add(this.appsButton);
             this.LeftMenu.Controls.Add(this.shutdownButton);
             this.LeftMenu.Controls.Add(this.pictureBox1);
             this.LeftMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.LeftMenu.Location = new System.Drawing.Point(0, 0);
             this.LeftMenu.Name = "LeftMenu";
-            this.LeftMenu.Size = new System.Drawing.Size(230, 761);
+            this.LeftMenu.Size = new System.Drawing.Size(230, 749);
             this.LeftMenu.TabIndex = 0;
             this.LeftMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.LeftMenu_Paint);
             // 
@@ -76,7 +76,7 @@
             this.batteryButton.IconColor = System.Drawing.Color.White;
             this.batteryButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.batteryButton.IconSize = 70;
-            this.batteryButton.Location = new System.Drawing.Point(114, 664);
+            this.batteryButton.Location = new System.Drawing.Point(114, 655);
             this.batteryButton.Name = "batteryButton";
             this.batteryButton.Size = new System.Drawing.Size(113, 94);
             this.batteryButton.TabIndex = 7;
@@ -176,7 +176,7 @@
             this.shutdownButton.IconChar = FontAwesome.Sharp.IconChar.PowerOff;
             this.shutdownButton.IconColor = System.Drawing.Color.White;
             this.shutdownButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.shutdownButton.Location = new System.Drawing.Point(0, 676);
+            this.shutdownButton.Location = new System.Drawing.Point(0, 664);
             this.shutdownButton.Name = "shutdownButton";
             this.shutdownButton.Size = new System.Drawing.Size(113, 85);
             this.shutdownButton.TabIndex = 1;
@@ -185,12 +185,9 @@
             this.shutdownButton.UseVisualStyleBackColor = false;
             this.shutdownButton.Click += new System.EventHandler(this.shutdownButton_Click);
             // 
-            // Time
-            // 
-            this.Time.Tick += new System.EventHandler(this.Time_Tick);
-            // 
             // pictureBox1
             // 
+            this.pictureBox1.Image = global::CGAS_ELEVES_Winforms.Properties.Resources.logo_CGAS;
             this.pictureBox1.Location = new System.Drawing.Point(0, -18);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(230, 135);
@@ -199,30 +196,38 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // Time
+            // 
+            this.Time.Tick += new System.EventHandler(this.Time_Tick);
+            // 
             // passwordAdmin1
             // 
             this.passwordAdmin1.AutoSize = true;
             this.passwordAdmin1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(216)))));
-            this.passwordAdmin1.Location = new System.Drawing.Point(233, 0);
+            this.passwordAdmin1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.passwordAdmin1.Location = new System.Drawing.Point(230, 0);
             this.passwordAdmin1.Name = "passwordAdmin1";
-            this.passwordAdmin1.Size = new System.Drawing.Size(1050, 800);
+            this.passwordAdmin1.Size = new System.Drawing.Size(1034, 749);
             this.passwordAdmin1.TabIndex = 3;
             this.passwordAdmin1.Load += new System.EventHandler(this.passwordAdmin1_Load);
             // 
             // statusPage1
             // 
+            this.statusPage1.AutoSize = true;
             this.statusPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(216)))));
-            this.statusPage1.Location = new System.Drawing.Point(233, 0);
+            this.statusPage1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.statusPage1.Location = new System.Drawing.Point(230, 0);
             this.statusPage1.Name = "statusPage1";
-            this.statusPage1.Size = new System.Drawing.Size(1050, 800);
+            this.statusPage1.Size = new System.Drawing.Size(1034, 749);
             this.statusPage1.TabIndex = 2;
             // 
             // appsEleves1
             // 
             this.appsEleves1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(216)))));
-            this.appsEleves1.Location = new System.Drawing.Point(233, 0);
+            this.appsEleves1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.appsEleves1.Location = new System.Drawing.Point(230, 0);
             this.appsEleves1.Name = "appsEleves1";
-            this.appsEleves1.Size = new System.Drawing.Size(1050, 800);
+            this.appsEleves1.Size = new System.Drawing.Size(1034, 749);
             this.appsEleves1.TabIndex = 1;
             this.appsEleves1.Load += new System.EventHandler(this.appsEleves1_Load);
             // 
@@ -230,11 +235,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(216)))));
-            this.ClientSize = new System.Drawing.Size(1264, 761);
+            this.ClientSize = new System.Drawing.Size(1264, 749);
+            this.Controls.Add(this.appsEleves1);
             this.Controls.Add(this.passwordAdmin1);
             this.Controls.Add(this.statusPage1);
-            this.Controls.Add(this.appsEleves1);
             this.Controls.Add(this.LeftMenu);
             this.Name = "MainForm";
             this.ShowIcon = false;
@@ -257,11 +263,11 @@
         private FontAwesome.Sharp.IconButton problemButton;
         private FontAwesome.Sharp.IconButton folderButton;
         private System.Windows.Forms.Label dateLabel;
-        private FontAwesome.Sharp.IconButton batteryButton;
         private Applications.AppsEleves appsEleves1;
         private Probleme.StatusPage statusPage1;
         private Admin.passwordAdmin passwordAdmin1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private FontAwesome.Sharp.IconButton batteryButton;
     }
 }
 

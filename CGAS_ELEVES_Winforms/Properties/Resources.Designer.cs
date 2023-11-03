@@ -22,7 +22,7 @@ namespace CGAS_ELEVES_Winforms.Properties {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources {
+    public class Resources {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,7 +36,7 @@ namespace CGAS_ELEVES_Winforms.Properties {
         ///   Retourne l'instance ResourceManager mise en cache utilisée par cette classe.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("CGAS_ELEVES_Winforms.Properties.Resources", typeof(Resources).Assembly);
@@ -51,7 +51,7 @@ namespace CGAS_ELEVES_Winforms.Properties {
         ///   les recherches de ressources à l'aide de cette classe de ressource fortement typée.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -63,7 +63,7 @@ namespace CGAS_ELEVES_Winforms.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap batterie_pleine {
+        public static System.Drawing.Bitmap batterie_pleine {
             get {
                 object obj = ResourceManager.GetObject("batterie-pleine", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -73,7 +73,7 @@ namespace CGAS_ELEVES_Winforms.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap batterie_trois_quarts {
+        public static System.Drawing.Bitmap batterie_trois_quarts {
             get {
                 object obj = ResourceManager.GetObject("batterie-trois-quarts", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -83,7 +83,7 @@ namespace CGAS_ELEVES_Winforms.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap batterie_vide {
+        public static System.Drawing.Bitmap batterie_vide {
             get {
                 object obj = ResourceManager.GetObject("batterie-vide", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -93,7 +93,7 @@ namespace CGAS_ELEVES_Winforms.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Calc {
+        public static System.Drawing.Bitmap Calc {
             get {
                 object obj = ResourceManager.GetObject("Calc", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -103,7 +103,7 @@ namespace CGAS_ELEVES_Winforms.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Calcdk {
+        public static System.Drawing.Bitmap Calcdk {
             get {
                 object obj = ResourceManager.GetObject("Calcdk", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -113,7 +113,7 @@ namespace CGAS_ELEVES_Winforms.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap demi_batterie {
+        public static System.Drawing.Bitmap demi_batterie {
             get {
                 object obj = ResourceManager.GetObject("demi-batterie", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -123,7 +123,7 @@ namespace CGAS_ELEVES_Winforms.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Earth {
+        public static System.Drawing.Bitmap Earth {
             get {
                 object obj = ResourceManager.GetObject("Earth", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -133,7 +133,7 @@ namespace CGAS_ELEVES_Winforms.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Edge {
+        public static System.Drawing.Bitmap Edge {
             get {
                 object obj = ResourceManager.GetObject("Edge", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -143,7 +143,7 @@ namespace CGAS_ELEVES_Winforms.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap GIMP {
+        public static System.Drawing.Bitmap GIMP {
             get {
                 object obj = ResourceManager.GetObject("GIMP", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -153,7 +153,7 @@ namespace CGAS_ELEVES_Winforms.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap logo_CGAS {
+        public static System.Drawing.Bitmap logo_CGAS {
             get {
                 object obj = ResourceManager.GetObject("logo CGAS", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -163,7 +163,7 @@ namespace CGAS_ELEVES_Winforms.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap logo_CGAS__2_ {
+        public static System.Drawing.Bitmap logo_CGAS__2_ {
             get {
                 object obj = ResourceManager.GetObject("logo CGAS (2)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -173,7 +173,7 @@ namespace CGAS_ELEVES_Winforms.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap OBS {
+        public static System.Drawing.Bitmap OBS {
             get {
                 object obj = ResourceManager.GetObject("OBS", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -181,9 +181,18 @@ namespace CGAS_ELEVES_Winforms.Properties {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à your password.
+        /// </summary>
+        public static string password {
+            get {
+                return ResourceManager.GetString("password", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap PDF {
+        public static System.Drawing.Bitmap PDF {
             get {
                 object obj = ResourceManager.GetObject("PDF", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -193,7 +202,7 @@ namespace CGAS_ELEVES_Winforms.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Presentation {
+        public static System.Drawing.Bitmap Presentation {
             get {
                 object obj = ResourceManager.GetObject("Presentation", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -203,7 +212,7 @@ namespace CGAS_ELEVES_Winforms.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap quart_de_batterie {
+        public static System.Drawing.Bitmap quart_de_batterie {
             get {
                 object obj = ResourceManager.GetObject("quart-de-batterie", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -213,7 +222,7 @@ namespace CGAS_ELEVES_Winforms.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Scratch {
+        public static System.Drawing.Bitmap Scratch {
             get {
                 object obj = ResourceManager.GetObject("Scratch", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -223,7 +232,7 @@ namespace CGAS_ELEVES_Winforms.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap VLC {
+        public static System.Drawing.Bitmap VLC {
             get {
                 object obj = ResourceManager.GetObject("VLC", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -233,7 +242,7 @@ namespace CGAS_ELEVES_Winforms.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Vocal {
+        public static System.Drawing.Bitmap Vocal {
             get {
                 object obj = ResourceManager.GetObject("Vocal", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -243,7 +252,7 @@ namespace CGAS_ELEVES_Winforms.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Writer {
+        public static System.Drawing.Bitmap Writer {
             get {
                 object obj = ResourceManager.GetObject("Writer", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
