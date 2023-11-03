@@ -45,7 +45,7 @@
             this.textBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.textBox1.Location = new System.Drawing.Point(560, 463);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(172, 20);
+            this.textBox1.Size = new System.Drawing.Size(173, 20);
             this.textBox1.TabIndex = 0;
             this.textBox1.UseSystemPasswordChar = true;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
@@ -74,7 +74,7 @@
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(0, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(1059, 100);
+            this.label2.Size = new System.Drawing.Size(1060, 100);
             this.label2.TabIndex = 2;
             this.label2.Text = "Zone Enseignants";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -86,9 +86,9 @@
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(0, 100);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(1059, 300);
+            this.label3.Size = new System.Drawing.Size(1060, 300);
             this.label3.TabIndex = 3;
-            this.label3.Text = "Entrez votre mot de passe pour quitter l\'application.\r\n";
+            this.label3.Text = "Entrez votre mot de passe pour accèder au menu Enseignants.\r\n";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel1
@@ -96,9 +96,9 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(68)))), ((int)(((byte)(163)))));
             this.panel1.Controls.Add(this.ValidButton);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 716);
+            this.panel1.Location = new System.Drawing.Point(0, 720);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1059, 100);
+            this.panel1.Size = new System.Drawing.Size(1060, 100);
             this.panel1.TabIndex = 5;
             // 
             // ValidButton
@@ -110,7 +110,7 @@
             this.ValidButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ValidButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ValidButton.ForeColor = System.Drawing.Color.White;
-            this.ValidButton.Location = new System.Drawing.Point(819, 24);
+            this.ValidButton.Location = new System.Drawing.Point(820, 24);
             this.ValidButton.Name = "ValidButton";
             this.ValidButton.Size = new System.Drawing.Size(150, 48);
             this.ValidButton.TabIndex = 6;
@@ -122,7 +122,6 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(216)))));
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label3);
@@ -130,7 +129,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
             this.Name = "passwordAdmin";
-            this.Size = new System.Drawing.Size(1059, 816);
+            this.Size = new System.Drawing.Size(1060, 820);
             this.Load += new System.EventHandler(this.passwordAdmin_Load);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);

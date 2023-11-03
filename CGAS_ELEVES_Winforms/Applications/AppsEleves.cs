@@ -88,5 +88,10 @@ namespace CGAS_ELEVES_Winforms.Applications
         {
 
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

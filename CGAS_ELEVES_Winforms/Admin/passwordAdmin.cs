@@ -49,7 +49,7 @@ namespace CGAS_ELEVES_Winforms.Admin
             {
                 if (testedPassword == password)
                 {
-                    Application.Exit();
+                    MainForm.SwitchForm();
                 }
                 else
                 {
@@ -60,6 +60,7 @@ namespace CGAS_ELEVES_Winforms.Admin
             }
             else
             {
+                MainForm.Logger("Enforced password : Canard énervé");
                 MessageBox.Show("Veuillez redémarrer cet ordinateur.\nLe nombre essais a été dépassé.\nCeci a été noté dans le journal de l'ordinateur.");
                 string message = "Redémarrer l'ordinateur ?\nCode erreur : Canard énervé";
                 string title = "Mot de passe incorrect :(";
@@ -67,6 +68,7 @@ namespace CGAS_ELEVES_Winforms.Admin
                 DialogResult result = MessageBox.Show(message, title, buttons);
                 if (result == DialogResult.Yes)
                 {
+                    MainForm.Logger("The computer reboot");
                     Process.Start("shutdown", "/r /t 0");
                 }
                 else
@@ -87,7 +89,7 @@ namespace CGAS_ELEVES_Winforms.Admin
                 {
                     if (testedPassword == password)
                     {
-                        Application.Exit();
+                        MainForm.SwitchForm();
                     }
                     else
                     {
@@ -98,6 +100,7 @@ namespace CGAS_ELEVES_Winforms.Admin
                 }
                 else
                 {
+                    MainForm.Logger("Enforced password : Canard énervé");
                     MessageBox.Show("Veuillez redémarrer cet ordinateur.\nVotre nombre essai est dépassé.\nCeci à été noté dans le journal de l'ordinateur.");
                     string message = "Redémarrer l'ordinateur ?\nCode erreur : Canard énervé";
                     string title = "Mot de passe incorrect :(";
@@ -105,6 +108,7 @@ namespace CGAS_ELEVES_Winforms.Admin
                     DialogResult result = MessageBox.Show(message, title, buttons);
                     if (result == DialogResult.Yes)
                     {
+                        MainForm.Logger("The computer reboot");
                         Process.Start("shutdown", "/r /t 0");
                     }
                     else

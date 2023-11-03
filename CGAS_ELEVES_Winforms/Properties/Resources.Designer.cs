@@ -173,6 +173,26 @@ namespace CGAS_ELEVES_Winforms.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap logo_CGAS_230_100 {
+            get {
+                object obj = ResourceManager.GetObject("logo CGAS_230_100", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap logo_CGAS_3 {
+            get {
+                object obj = ResourceManager.GetObject("logo CGAS 3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap OBS {
             get {
                 object obj = ResourceManager.GetObject("OBS", resourceCulture);

@@ -20,6 +20,7 @@ namespace CGAS_ELEVES_Winforms.Probleme
         public StatusPage()
         {
             InitializeComponent();
+            
             this.Dock = DockStyle.Fill;
             if (NetworkInterface.GetIsNetworkAvailable())
             {
@@ -29,6 +30,7 @@ namespace CGAS_ELEVES_Winforms.Probleme
             }
             else
             {
+                MainForm.Logger("The computer is not connected");
                 statusButton.IconChar = FontAwesome.Sharp.IconChar.X;
                 statusButton.IconColor = Color.Red;
             }
@@ -67,6 +69,7 @@ namespace CGAS_ELEVES_Winforms.Probleme
             DialogResult result = MessageBox.Show(message, title, buttons);
             if (result == DialogResult.Yes)
             {
+                MainForm.Logger("The computer reboot");
                 Process.Start("shutdown", "/r /t 0");
             }
             else
