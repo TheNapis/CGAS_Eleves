@@ -224,6 +224,8 @@
     <None Include="Resources\Writer.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\SCHEMA_BATT2.png" />
+    <None Include="Resources\SCHEMA_BATT.png" />
     <None Include="Resources\logo CGAS_230_100.png" />
     <None Include="Resources\logo CGAS 3.png" />
     <None Include="Resources\quart-de-batterie.png" />
