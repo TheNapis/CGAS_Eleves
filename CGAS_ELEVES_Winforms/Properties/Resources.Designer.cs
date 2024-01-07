@@ -242,6 +242,26 @@ namespace CGAS_ELEVES_Winforms.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap SCHEMA_BATT {
+            get {
+                object obj = ResourceManager.GetObject("SCHEMA_BATT", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap SCHEMA_BATT2 {
+            get {
+                object obj = ResourceManager.GetObject("SCHEMA_BATT2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap Scratch {
             get {
                 object obj = ResourceManager.GetObject("Scratch", resourceCulture);

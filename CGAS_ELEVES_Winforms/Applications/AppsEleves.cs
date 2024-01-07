@@ -46,7 +46,7 @@ namespace CGAS_ELEVES_Winforms.Applications
 
         private void VocalButton_Click(object sender, EventArgs e)
         {
-            Process.Start("explorer.exe", @"C:\Users\Eleves\CGAS_ELEVES\Enregistreurvocal.lnk");
+            Process.Start("explorer.exe", @"shell:appsFolder\Microsoft.WindowsSoundRecorder_8wekyb3d8bbwe!App");
         }
 
         private void VLCButton_Click(object sender, EventArgs e)

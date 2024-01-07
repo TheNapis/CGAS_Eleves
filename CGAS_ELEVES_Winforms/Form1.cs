@@ -26,6 +26,8 @@ namespace CGAS_ELEVES_Winforms
     {
         
         public int adminCount = 0;
+        bool message1 = false;
+        bool message2 = false;
         public MainForm()
         {
             
@@ -66,6 +68,7 @@ namespace CGAS_ELEVES_Winforms
         {
             dateLabel.Text = DateTime.Now.ToShortDateString(); //30.5.2012
             timeLabel.Text = DateTime.Now.ToLongTimeString();
+            BatteryStatus();
             Time.Start();
         }
 
@@ -76,39 +79,82 @@ namespace CGAS_ELEVES_Winforms
 
             foreach (var battery in allBatteries)
             {
+                PowerStatus pwr = SystemInformation.PowerStatus;
+
+
                 int estimatedChargeRemaining = Convert.ToInt32(battery["EstimatedChargeRemaining"]);
-                if (estimatedChargeRemaining >= 75)
+                switch (pwr.PowerLineStatus)
                 {
-                    batteryButton.IconChar = FontAwesome.Sharp.IconChar.Battery;
-                    batteryButton.IconColor = Color.PaleGreen;
-                    
-                }
+                    case (PowerLineStatus.Offline):
+                        batteryButton.Rotation = 0;
+                        if (estimatedChargeRemaining >= 75)
+                        {
+                            batteryButton.IconChar = FontAwesome.Sharp.IconChar.Battery;
+                            batteryButton.IconColor = Color.PaleGreen;
 
-                else if (estimatedChargeRemaining >= 50)
-                {
-                    batteryButton.IconChar = FontAwesome.Sharp.IconChar.Battery4;
-                    batteryButton.IconColor = Color.White;
-                    
-                }
+                        }
+                        else if (estimatedChargeRemaining >= 50)
+                        {
+                            batteryButton.IconChar = FontAwesome.Sharp.IconChar.Battery4;
+                            batteryButton.IconColor = Color.White;
 
-                else if (estimatedChargeRemaining >= 25)
-                {
-                    batteryButton.IconChar = FontAwesome.Sharp.IconChar.BatteryQuarter;
-                    batteryButton.IconColor = Color.Orange;
-                    
-                }
-                else if (estimatedChargeRemaining <= 15)
-                {
-                    batteryButton.IconChar = FontAwesome.Sharp.IconChar.BatteryEmpty;
-                    batteryButton.IconColor = Color.Red;
-                    
-                }
+                        }
+                        else if (estimatedChargeRemaining >= 25)
+                        {
+                            batteryButton.IconChar = FontAwesome.Sharp.IconChar.BatteryQuarter;
+                            batteryButton.IconColor = Color.Orange;
 
-                else 
-                {
-                    batteryButton.IconChar = FontAwesome.Sharp.IconChar.Question;
-                    
+                        }
+                        else if (estimatedChargeRemaining >= 15)
+                        {
+                            batteryButton.IconChar = FontAwesome.Sharp.IconChar.BatteryQuarter;
+                            batteryButton.IconColor = Color.Red;
+                            if (message1 == false)
+                            {
+                                MessageBox.Show("La batterie de l'ordinateur est faible. Enregister votre travail.", "Batterie faible", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                                message1 = true;
+                            }
+                            else { }
+
+                        }
+                        else if (estimatedChargeRemaining >= 8)
+                        {
+                            batteryButton.IconChar = FontAwesome.Sharp.IconChar.BatteryEmpty;
+                            batteryButton.IconColor = Color.Red;
+
+                            if (message2 == false)
+                            {
+                                MessageBox.Show("La batterie de l'ordinateur est très faible. L'ordinateur va maintenant s'éteindre.", "Arrêt de l'ordinateur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                Process.Start("shutdown", "/s /t 0");
+                                message2 = true;
+                            }
+                            else { }
+
+                        }
+                        else
+                        {
+                            batteryButton.IconChar = FontAwesome.Sharp.IconChar.Question;
+
+
+                        }
+                        break;
+
+                    case (PowerLineStatus.Online):
+                        batteryButton.IconChar = FontAwesome.Sharp.IconChar.Plug;
+                        batteryButton.Rotation = 90;
+                        if (estimatedChargeRemaining >= 90)
+                        {
+                            batteryButton.IconColor = Color.PaleGreen;
+                        }
+                        else
+                        {
+                            batteryButton.IconColor = Color.Orange;
+                        }
+                            
+                        
+                        break;
                 }
+                
 
             }
         }
@@ -183,8 +229,6 @@ namespace CGAS_ELEVES_Winforms
             passwordAdmin1.Visible = false;
         }
 
-        
-
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
@@ -215,12 +259,12 @@ namespace CGAS_ELEVES_Winforms
 
         public static void Logger(string lines)
         {
-            string path = @"C:\CGAS\";
+            string path = @"C:\CGAS\Logs\";
             VerifyDir(path);
             string fileName = DateTime.Now.Day.ToString() + DateTime.Now.Month.ToString() + DateTime.Now.Year.ToString() + ".txt";
             try
             {
-                System.IO.StreamWriter file = new System.IO.StreamWriter(path + "CGAS_Logs " + fileName, true);
+                System.IO.StreamWriter file = new System.IO.StreamWriter(path + "CGASEleves_Logs " + fileName, true);
                 file.WriteLine(DateTime.Now.ToString() + " : " + lines);
                 file.Close();
             }

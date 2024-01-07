@@ -132,7 +132,7 @@
             this.batteryButton.IconChar = FontAwesome.Sharp.IconChar.Question;
             this.batteryButton.IconColor = System.Drawing.Color.White;
             this.batteryButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.batteryButton.IconSize = 50;
+            this.batteryButton.IconSize = 40;
             this.batteryButton.Location = new System.Drawing.Point(315, 3);
             this.batteryButton.Name = "batteryButton";
             this.batteryButton.Size = new System.Drawing.Size(59, 43);
@@ -165,7 +165,7 @@
             this.problemButton.IconChar = FontAwesome.Sharp.IconChar.QuestionCircle;
             this.problemButton.IconColor = System.Drawing.Color.White;
             this.problemButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.problemButton.IconSize = 70;
+            this.problemButton.IconSize = 60;
             this.problemButton.Location = new System.Drawing.Point(1064, 0);
             this.problemButton.Name = "problemButton";
             this.problemButton.Size = new System.Drawing.Size(100, 90);
@@ -217,7 +217,7 @@
             this.shutdownButton.IconChar = FontAwesome.Sharp.IconChar.PowerOff;
             this.shutdownButton.IconColor = System.Drawing.Color.White;
             this.shutdownButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.shutdownButton.IconSize = 70;
+            this.shutdownButton.IconSize = 60;
             this.shutdownButton.Location = new System.Drawing.Point(1164, 0);
             this.shutdownButton.Name = "shutdownButton";
             this.shutdownButton.Size = new System.Drawing.Size(100, 90);
@@ -250,7 +250,7 @@
             this.appsEleves1.Location = new System.Drawing.Point(0, 90);
             this.appsEleves1.Margin = new System.Windows.Forms.Padding(4);
             this.appsEleves1.Name = "appsEleves1";
-            this.appsEleves1.Size = new System.Drawing.Size(1264, 659);
+            this.appsEleves1.Size = new System.Drawing.Size(1264, 591);
             this.appsEleves1.TabIndex = 1;
             this.appsEleves1.Load += new System.EventHandler(this.appsEleves1_Load);
             // 
@@ -262,7 +262,7 @@
             this.passwordAdmin1.Location = new System.Drawing.Point(0, 90);
             this.passwordAdmin1.Margin = new System.Windows.Forms.Padding(4);
             this.passwordAdmin1.Name = "passwordAdmin1";
-            this.passwordAdmin1.Size = new System.Drawing.Size(1264, 659);
+            this.passwordAdmin1.Size = new System.Drawing.Size(1264, 591);
             this.passwordAdmin1.TabIndex = 3;
             // 
             // statusPage1
@@ -273,16 +273,16 @@
             this.statusPage1.Location = new System.Drawing.Point(0, 90);
             this.statusPage1.Margin = new System.Windows.Forms.Padding(4);
             this.statusPage1.Name = "statusPage1";
-            this.statusPage1.Size = new System.Drawing.Size(1264, 659);
+            this.statusPage1.Size = new System.Drawing.Size(1264, 591);
             this.statusPage1.TabIndex = 2;
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(117)))), ((int)(((byte)(216)))));
-            this.ClientSize = new System.Drawing.Size(1264, 749);
+            this.ClientSize = new System.Drawing.Size(1264, 681);
             this.Controls.Add(this.appsEleves1);
             this.Controls.Add(this.passwordAdmin1);
             this.Controls.Add(this.statusPage1);
