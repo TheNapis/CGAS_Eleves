@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Diagnostics;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -26,12 +27,28 @@ namespace CGAS_ELEVES_Winforms.Applications
 
         private void CalcButton_Click(object sender, EventArgs e)
         {
-            Process.Start("explorer.exe", @"C:\ProgramData\Microsoft\Windows\Start Menu\Programs\LibreOffice 6.3\LibreOffice Calc.lnk");
+            try
+            {
+                Process.Start("explorer.exe", @"C:\ProgramData\Microsoft\Windows\Start Menu\Programs\LibreOffice 6.3\LibreOffice Calc.lnk");
+            }
+            catch (Exception Ex)
+            {
+                MessageBox.Show("Il semble que l'application Calculatrice à un problème.","Erreur",MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            
         }
 
         private void WriterButton_Click(object sender, EventArgs e)
         {
-            Process.Start("explorer.exe", @"C:\ProgramData\Microsoft\Windows\Start Menu\Programs\LibreOffice 6.3\LibreOffice Writer.lnk");
+            try
+            {
+                Process.Start("explorer.exe", @"C:\ProgramData\Microsoft\Windows\Start Menu\Programs\LibreOffice 6.3\LibreOffice Writer.lnk");
+            }
+            catch (Exception Ex)
+            {
+                MessageBox.Show("Il semble que l'application Texte à un problème.", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            
         }
 
         private void PresentationButton_Click(object sender, EventArgs e)
